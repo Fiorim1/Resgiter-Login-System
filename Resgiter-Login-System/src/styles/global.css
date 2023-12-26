@@ -1,0 +1,281 @@
+.title h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-top: 20px;
+    font-family: 'Nova Square', sans-serif;
+    color: white;
+}
+
+html,
+body {
+    background-color: black;
+
+}
+
+.spacing120px {
+    margin: 120px;
+}
+
+.box {
+    text-align: center;
+    border: 2px solid white;
+    font-family: 'Nova Square', sans-serif;
+    margin: 0 100px 0 100px;
+    border-radius: 50px;
+
+
+}
+
+.spacing60px {
+    margin: 60px;
+}
+
+.text {
+    margin-bottom: 10px;
+    color: white;
+}
+
+input[type=text] {
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 1px 1px 2px #333333;
+    -moz-box-shadow: 1px 1px 2px #333333;
+    -webkit-box-shadow: 1px 1px 2px #333333;
+    background: #cccccc;
+    border: 1px solid #000000;
+    width: 150px;
+    width: 200px;
+    height: 40px;
+    padding: 8px 10px 8px 10px;
+    text-align: center;
+}
+
+.name,
+.last-name,
+.black-bar {
+    color: white;
+}
+
+* {
+    color: white;
+}
+
+.name {
+    margin-top: -30px;
+}
+
+.title-box {
+    transition: transform 0.3s ease-in-out;
+}
+
+.title-box:hover {
+    transform: translateY(-10px);
+}
+
+input[type="email"] {
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 1px 1px 2px #333333;
+    -moz-box-shadow: 1px 1px 2px #333333;
+    -webkit-box-shadow: 1px 1px 2px #333333;
+    background: #cccccc;
+    border: 1px solid #000000;
+    width: 150px;
+    width: 200px;
+    height: 40px;
+    padding: 8px 10px 8px 10px;
+    text-align: center;
+}
+
+input[type="password"] {
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    box-shadow: 1px 1px 2px #333333;
+    -moz-box-shadow: 1px 1px 2px #333333;
+    -webkit-box-shadow: 1px 1px 2px #333333;
+    background: #cccccc;
+    border: 1px solid #000000;
+    width: 150px;
+    width: 200px;
+    height: 40px;
+    padding: 8px 10px 8px 10px;
+    text-align: center;
+}
+
+
+.password input {
+    margin-left: 30px;
+}
+
+.password img {
+    margin-bottom: -5px;
+}
+
+.spacing18px {
+    margin: 18px;
+}
+
+.buttonRegister,
+#buttonLogin {
+    text-decoration: none;
+    padding: 10px 20px;
+    cursor: pointer;
+
+}
+
+.buttonRegister,
+#buttonLogin {
+    margin: 30px 0 30px 0;
+
+}
+
+.button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 13px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+.login {
+    display: flex;
+    justify-content: right;
+    margin: 5px 20px 20px 0;
+}
+
+.login a {
+    text-decoration: none;
+
+
+}
+
+.login {
+    justify-content: center;
+}
+
+.login a:hover {
+    transform: scale(1.05);
+}
+
+
+
+.email button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 13px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 10px;
+    margin-left: 10px;
+
+}
+
+.button {
+    font-size: 10px;
+
+}
+
+#email,
+#name,
+#last-name,
+#password {
+    display: block;
+    margin: 0 auto;
+}
+
+.email button {
+    margin: 8px 0 0 0;
+}
+
+.eye-password {
+    display: flex;
+    justify-content: flex-end;
+    margin: -50px 350px 0 500px;
+
+}
+
+.eye-password img {
+    margin-top: -10px;
+}
+
+.button-password-div {
+    opacity: 0;
+}
+
+#spacing60px {
+    margin-top: -30px;
+}
+
+
+
+/* Função para o site funcionar em mobiles */
+
+@media screen and (max-width: 768px) {
+
+    .spacing120px,
+    .spacing60px,
+    .spacing18px {
+        margin: 20px;
+    }
+
+    .box {
+        margin: 0 20px 0 20px;
+    }
+
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        width: 70%;
+
+    }
+
+    .button-password-div {
+        opacity: 0;
+    }
+
+    .buttonRegister,
+    #buttonLogin {
+        margin: 20px 0 20% 0;
+        margin-top: 10px;
+    }
+
+    .eye-password {
+        margin: -40px 20px 0px 0;
+        text-align: center;
+    }
+
+    .eye-password>img {
+        margin-top: 50px;
+
+    }
+
+    .login {
+        margin: -68px 0 0 13px;
+
+    }
+
+    .login {
+        margin: auto;
+
+
+    }
+
+
+
+
+
+
+}

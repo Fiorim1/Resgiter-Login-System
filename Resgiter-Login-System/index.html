@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles/global.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nova+Square&display=swap" rel="stylesheet">
+    <title>Registro</title>
+</head>
+
+<body>
+    <div class="title">
+        <h1>SEJA BEM-VINDO(A) AO NOSSO SITE</h1>
+    </div>
+    <div class="spacing120px"></div>
+    <div class="box">
+        <section class="title-box">
+            <h2>Cadastro de Usuário</h2>
+        </section>
+        <section class="spacing60px"></section>
+        <section class="black-bar">
+            <a href="https://www.youtube.com/watch?v=mEJ_jxFJU_0"><img src="src/assets/cat-nyan-cat.gif" alt="" srcset=""
+                    width="100px"></a>
+        </section>
+        <section class="spacing60px"></section>
+        <form onsubmit="return validateForm()">
+            <section class="name">
+                <p>NOME:</p>
+                <input type="text" id="name" placeholder="Digite seu nome completo" required>
+            </section>
+            <section class="last-name">
+                <p>SOBRENOME:</p>
+                <input type="text" id="last-name" placeholder="Digite seu sobrenome completo" required>
+            </section>
+            <section class="email">
+                <p>E-MAIL:</p>
+                <input type="text" id="email" placeholder="Digite um e-mail válido" required>
+                <button onclick="emailCheck()">VERIFICAR EMAIL</button>
+                <p id="result"></p>
+            </section>
+            <section class="password">
+                <p>SENHA:</p>
+
+                <input type="password" id="password" name="password" placeholder="Insira uma senha válida" required>
+                <div class="button-password-div">
+                    <button id="button-password">...</button>
+                </div>
+
+                <section class="eye-password">
+                    <img src="src/assets/olho.png" alt="Mostrar Senha" class="eye" onclick="showPassword()">
+                </section>
+
+
+            </section>
+            <section class="buttonRegister">
+                <a href="#" id="redirect""><input id="emailBtn" class="button" type="submit" value="REGISTRE-SE"></a>
+            </section>
+            <section class="login">
+                <a href="src/pages/login.html">
+                    <p>Caso já possua um login, clique aqui!!</p>
+                </a>
+            </section>
+        </form>
+
+
+    </div>
+    <script src="src/services/checkEmail.js"></script>
+    <script src="src/services/showPassword.js"></script>
+    <script src="src/services/fillFields.js"></script>
+    <script src="src/services/checkEmailRegister.js"></script>
+    <!-- <script src="src/services/validate.js"></script> -->
+    <script src="src/services/buttonRegis.js"></script>
+</body>
+
+</html>
